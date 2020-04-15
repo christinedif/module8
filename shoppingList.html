@@ -1,0 +1,10 @@
+</br><h2> Matching list: </h2>
+<ol>
+  <li ng-repeat="item in list.items">
+    <b> Name: </b> {{ item.name }} </br> <b> Short Name: </b> {{ item.short_name }} </br> <b> Description: </b> {{ item.description }}</br>
+    <button ng-click="list.onRemove({index: $index});">Don't want this one!</button></br>
+  </li>
+</ol>
+<div class="error" ng-if="list.items.length==0">Nothing found!</div>
+<div class="error" ng-if="list.items.length==219">Nothing found!</div>
+
